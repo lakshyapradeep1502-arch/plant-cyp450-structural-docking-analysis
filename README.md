@@ -1,4 +1,4 @@
-\# Plant CYP450 Structural \& Docking Analysis
+**Plant CYP450 Structural \& Docking Analysis**
 
 
 
@@ -14,7 +14,7 @@ Fellowship (2025) under Dr. Vineeta Tripathi, Principal Scientist.
 
 
 
-\*\*Working sequence:\*\* CYP76AH1 (ferruginol synthase) from \**Salvia miltiorrhiza*\*
+**Working sequence:** CYP76AH1 (ferruginol synthase) from *Salvia miltiorrhiza*
 
 (UniProt S4UX02; GenBank JX422213 / protein AGN04215.1), selected for its functional and
 
@@ -26,7 +26,7 @@ phylogenetic similarity to the \**Eclipta prostrata\** CYP450 characterised duri
 
 
 
-During the fellowship, a CYP450 gene from \**Eclipta prostrata*\* — involved in wedelolactone
+During the fellowship, a CYP450 gene from *Eclipta prostrata* — involved in wedelolactone
 
 biosynthesis — was sub-cloned into pYES2-NTB (yeast) and pCAMBIA1302 (plant/Agrobacterium)
 
