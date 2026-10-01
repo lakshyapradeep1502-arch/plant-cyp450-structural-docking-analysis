@@ -191,9 +191,7 @@ restricted to a narrow clade within the broader CYP76 family.
 
 ## Status
 
-
-
- [x] Phase 1: Phylogenetics
+[x] Phase 1: Phylogenetics
 
 [ ] Phase 2: Structure prediction (ColabFold) and comparison to experimental structures
 
@@ -206,7 +204,9 @@ restricted to a narrow clade within the broader CYP76 family.
 
 
 ## References
-1. UniProt: S4UX02 (CYPH1\_SALMI)
-
-2. NCBI: JX422213 / AGN04215.1
+1.Mao, Y. et al. (2020). Functional Integration of Two CYP450 Genes Involved in
+   Biosynthesis of Tanshinones for Improved Diterpenoid Production by Synthetic Biology.
+   *ACS Synthetic Biology*, 9(7). https://doi.org/10.1021/acssynbio.0c00136.
+2. UniProt: S4UX02 (CYPH1\_SALMI)
+3. NCBI: JX422213 / AGN04215.1
 
