@@ -83,7 +83,6 @@ consistent with strong purifying selection on this catalytically essential resid
 
 ![Heme-binding motif conservation](figures/heme_binding_motif.png)
 
-
 **Specificity-residue analysis (D301 / V479).** Mao et al. (2020) showed that mutating two
 residues in CYP76AH1 — D301→E and V479→F — shifts product specificity from pure ferruginol
 toward the broader product profile of its paralog CYP76AH3. Checking these two positions across
@@ -119,7 +118,8 @@ the alignment:
 
 | AMZ03392.1 | *Plectranthus barbatus* | E | L |
 
-
+![Position 301 alignment across homologs](figures/position_301_alignment.png)
+![Position 479 alignment across homologs](figures/position_479_alignment.png)
 
 D301 and V479 co-occur perfectly across the dataset with zero exceptions: only the three
 *S. miltiorrhiza* sequences and one *Isodon japonicus* homolog retain both wild-type residues,
@@ -137,7 +137,9 @@ MSA mode) for 3D structure prediction. The top-ranked model achieved high confid
 80-95 range across all 5 generated models — indicating a reliably folded core structure, with
 only isolated flexible loop regions dropping to lower confidence (50-60).
 
-![ColabFold confidence plot](figures/colabfold_confidence_plot.png)
+![ColabFold per-residue confidence (pLDDT)](figures/CYP76AH1_de1fa_plddt.png)
+![ColabFold predicted alignment error (PAE)](figures/CYP76AH1_de1fa_pae.png)
+![ColabFold MSA sequence coverage](figures/CYP76AH1_de1fa_coverage.png)
 
 **Validation against experimental structures.** The predicted structure was aligned in PyMOL
 against two published crystal structures of CYP76AH1 from *Salvia miltiorrhiza*: PDB 5YLW
