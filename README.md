@@ -168,6 +168,79 @@ miltiradiene — a direct structural explanation for why mutating either positio
 ![Active site: heme, substrate, and D301/V479](figures/active_site_D301_V479_heme_substrate.png)
 
 
+## Phase 3 — Molecular Docking (CB-Dock2)
+
+Three ligands were docked against the AlphaFold2-predicted CYP76AH1 structure using CB-Dock2's
+Structure-based Blind Docking mode (AutoDock Vina scoring, automatic cavity detection — no
+pocket location specified in advance). Ligand structures were sourced from PubChem as 3D SDF
+files.
+- **Tanshinone IIA** (PubChem CID 164676) — a downstream pathway product of CYP76AH1
+- **Cryptotanshinone** (PubChem CID 160254) — a related tanshinone pathway intermediate
+- **Wedelolactone** (PubChem CID 5281813) — the bioactive compound from *Eclipta prostrata*
+  linked to the original CDRI wet-lab work
+
+**Headline finding:** all three ligands, docked independently, converged on the exact same
+binding cavity (CurPocket C1, volume 6911 Å³) — the same pocket already confirmed in Phase 2
+to contain the heme group. This cavity's contact residues include both specificity-determining
+residues from Phase 1 (**C437**, the heme-ligating cysteine, and **V479**), plus residues
+immediately flanking D301 (D294, T302, N303). This is independent confirmation, via a
+completely different computational method, of the active site located structurally in Phase 2.
+
+---
+
+### Tanshinone IIA (PubChem CID 164676)
+
+CYP76AH1's own downstream pathway product. Docked with the **strongest affinity of the three**
+ligands tested: **-10.2 kcal/mol**, into CurPocket C1 (volume 6911 Å³), directly contacting
+C437 and V479.
+
+![Tanshinone IIA — all detected cavities](docking/results/tanshinone_IIA_all_cavities.png)
+![Tanshinone IIA — docking pose in the active site](figures/tanshinone_IIA_docking_pose.png)
+![Tanshinone IIA — C1 contact residues](docking/results/tanshinone_IIA_C1_contacts.png)
+
+---
+
+### Cryptotanshinone (PubChem CID 160254)
+
+A related intermediate in the same tanshinone biosynthetic pathway. Docked into the identical
+C1 pocket, with Vina score **-9.1 kcal/mol** — intermediate between tanshinone IIA and
+wedelolactone, consistent with its structural similarity to tanshinone IIA.
+
+![Cryptotanshinone — all detected cavities](docking/results/cryptotanshinone_all_cavities.png)
+![Cryptotanshinone — docking pose in the active site](figures/cryptotanshinone_docking_pose.png)
+![Cryptotanshinone — C1 contact residues](docking/results/cryptotanshinone_C1_contacts.png)
+
+---
+
+### Wedelolactone (PubChem CID 5281813)
+
+The bioactive compound from *Eclipta prostrata* connected to the original CDRI wet-lab cloning
+work this project extends. Despite originating from a structurally unrelated CYP450 pathway in
+a different plant species, wedelolactone still docked into the same C1 pocket, contacting C437
+and V479 — but with the **weakest affinity of the three**, **-8.7 kcal/mol**. This is consistent
+with wedelolactone being accommodated by the pocket without being a native substrate for this
+specific enzyme.
+
+![Wedelolactone — all detected cavities](docking/results/wedelolactone_all_cavities.png)
+![Wedelolactone — docking pose in the active site](figures/wedelolactone_docking_pose.png)
+![Wedelolactone — C1 contact residues](docking/results/wedelolactone_C1_contacts.png)
+
+---
+
+### Summary
+
+| Ligand | Vina score (kcal/mol) | Cavity volume (Å³) | C437 contact | V479 contact |
+|---|---|---|---|---|
+| Tanshinone IIA | **-10.2** | 6911 | ✓ | ✓ |
+| Cryptotanshinone | **-9.1** | 6911 | ✓ | ✓ |
+| Wedelolactone | **-8.7** | 6911 | ✓ | ✓ |
+
+Binding affinity follows a biologically sensible gradient: native pathway compounds
+(tanshinone IIA, cryptotanshinone) bind more tightly than a bioactive compound from an
+unrelated biosynthetic pathway (wedelolactone), while all three engage the same authentic
+catalytic pocket identified independently in Phase 2.
+
+
 
 
 ## Status
@@ -178,7 +251,7 @@ miltiradiene — a direct structural explanation for why mutating either positio
 
 &#x20;     (PDB 5YLW, 7CB9)
 
-[ ] Phase 3: Molecular docking (tanshinone IIA, wedelolactone, cryptotanshinone)
+[x] Phase 3: Molecular docking (tanshinone IIA, wedelolactone, cryptotanshinone)
 
 [ ] Phase 4: Pharmacogenomics — CYP2D6 metaboliser-phenotype classifier
 
