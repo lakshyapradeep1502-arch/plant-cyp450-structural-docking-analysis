@@ -1,0 +1,11 @@
+seed,model,person_acc,diplotype_acc,recall_Poor,recall_Inter,recall_Normal,recall_Ultra
+0,RandomForest,0.344,0.661,0.899,0.982,0.096,0.683
+0,LogisticRegression,0.961,0.86,1.0,0.972,0.958,0.634
+1,RandomForest,0.786,0.57,0.978,0.681,0.826,0.902
+1,LogisticRegression,0.992,0.802,0.998,0.989,0.995,0.829
+2,RandomForest,0.352,0.587,0.8,0.817,0.146,0.008
+2,LogisticRegression,0.993,0.826,0.875,0.986,0.997,0.997
+3,RandomForest,0.372,0.612,0.941,0.75,0.14,0.811
+3,LogisticRegression,0.99,0.901,0.985,0.982,0.997,0.905
+4,RandomForest,0.436,0.645,0.891,0.972,0.015,0.977
+4,LogisticRegression,0.997,0.901,1.0,0.997,0.998,0.992
