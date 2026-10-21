@@ -1,8 +1,9 @@
-# Plant CYP450 Structural \& Docking Analysis
+# Plant CYP450 Structural and Docking Analysis, with a CYP2D6 Phenotype Classifier
 
 Computational structural and docking analysis of plant CYP450 enzymes involved in secondary
-metabolite biosynthesis, extended to a pharmacogenomics classifier for human drug metabolism
-prediction. Developed as a computational extension of wet-lab molecular cloning work performed
+metabolite biosynthesis,extended with a pharmacogenomic CYP2D6 metaboliser-phenotype classifier
+trained on simulated populations, with phenotypes assigned by CPIC rules.
+Developed as a computational extension of wet-lab molecular cloning work performed
 at CSIR-Central Drug Research Institute (CDRI), Lucknow, during an INSA-NASI Summer Research
 Fellowship (2025) under Dr. Vineeta Tripathi, Principal Scientist.
 
